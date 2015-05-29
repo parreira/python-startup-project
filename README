@@ -1,0 +1,200 @@
+
+ = = = FICHEIROS DE APOIO = = =
+
+ Os ficheiros de apoio ao projecto 
+encontram-se dentro do zip proj2.zip,
+disponibilizado juntamente com o 
+enunciado do projecto.
+
+ Devera descompactar o conteudo do 
+ficheiro zip para uma directoria 'a
+sua escolha, devendo este conter:
+
+  - uma subdirectoria "lib", contendo
+10 ficheiros com extensao gif. Esta 
+directoria, bem como o seu conteudo,
+nao deverao ser modificados.
+
+  - Um ficheiro "mapa-10.txt", contendo
+uma descricao de um ambiente pequeno que
+pode usar para testar o seu codigo.
+
+  - um ficheiro robot.pyc, que contem
+as funcoes que lhe permitirao comunicar e
+controlar o robot.
+
+  - este ficheiro README.
+
+  - um ficheiro "o_meu_projecto.py", que
+devera' renomear conforme as instrucoes 
+dadas no enunciado, e onde devera' *substituir*
+as entradas
+
+# < Incluir codigo aqui > 
+
+pelo seu codigo.
+
+IMPORTANTE: Os ficheiros "robot.pyc", 
+"mapa-10.txt" e o ficheiro com o seu codigo, 
+bem como a directoria "lib", deverao todos 
+estar na mesma directoria.
+
+ = = = = O MODULO ROBOT = = = = 
+
+ O modulo robot, disponibilizado 
+juntamente com este ficheiro de apoio, 
+e' o que lhe ira' permitir comunicar/
+controlar o robot no ambiente.
+
+ Para efeitos do seu projecto, as 
+funcoes que devera utilizar encontram-se
+descritas no enunciado do projecto.
+
+ - - inicia_comunicacao() - -
+
+ A funcao inicia_comunicacao deve ser 
+utilizada para iniciar a comunicacao com 
+um robot. 
+
+ Para o ajudar no desenvolvimento, 
+fornece-se um ficheiro exemplificativo, 
+mapa-10.txt, que pode usar para testar
+as suas funções.
+
+ A funcao inicia_comunicacao nao recebe
+qualquer argumento e devolve um objecto
+computacional que corresponde ao canal de 
+comunicacao com o robot, e que devera' ser 
+usado como argumento para enviar comandos 
+para o robot.
+
+ Um exemplo de interaccao possivel e':
+
+>>> canal = inicia_comunicacao() 
+
+Apos o comando acima, deve surgir a janela
+com o interface, mostrando o mapa e o robot.
+
+>>> robot_anda(canal) 
+
+Apos o comando acima, devera observar no 
+interface que o robot se deslocou uma casa 
+para a direita.
+
+IMPORTANTE: A sua funcao, controla_robot, *nao 
+devera* invocar a funcao inicia_comunicacao.
+
+ - - testa_controlo(<ficheiro_codigo>) - -
+
+ A funcao testa_controlo deve ser utilizada
+para testar a sua funcao controla_robot. 
+
+ A funcao testa_controlo recebe como unico 
+o nome do ficheiro que contem o seu codigo, e
+invoca sucessivamente a funcao controla_robot,
+sendo possivel observar no interface grafico
+o resultado do seu controlo. No final, a funcao
+testa_controlo escreve no ecra algumas 
+estatisticas da sua performance.
+
+ Supondo que o seu codigo se encontra no ficheiro 
+'FP1213_parte2_grupo0.py', um exemplo de interaccao 
+possivel e':
+
+>>> testa_controlo('FP1213_parte2_grupo0.py')
+
+- - LOG DA JORNADA EXPLORATORIA - -
+
+Distancia percorrida: 40
+Numero total de locais visitados: 25
+Numero de premios recolhidos: 1
+Quantidade de comida recolhida: 0
+Numero de tiros disparados: 1
+Numero de monstros destruidos: 1
+Press Enter to continue...
+
+ = = = = O MODULO TESTES_TAI = = = = 
+
+ O modulo testes_tai, disponibilizado 
+juntamente com este ficheiro de apoio, 
+contem uma unica funcao, testa_tai, que efectua
+alguns testes basicos sobre os TAIs que devera'
+definir na segunda parte do projecto.
+
+ - - testa_tai(<ficheiro_codigo>) - -
+
+ A funcao testa_tai deve ser utilizada
+para despistar alguns erros comuns na definicao
+dos TAIs na segunda parte do projecto. 
+
+ A funcao testa_tai recebe como unico parametro
+o nome do ficheiro que contem o seu codigo, e
+realiza um conjunto de testes sobre os varios
+tipos de informacao que deverao estar definidos.
+
+ Supondo que o seu codigo se encontra no ficheiro 
+'FP1213_parte2_grupo0.py', um exemplo de interaccao 
+possivel e':
+
+>>> testa_tai('FP1213_parte2_grupo0.py')
+
+ - TESTES TAI -
+
+Teste 1 - TAI objecto - Falhou!
+espaco_p(espaco) retornou False
+Resultado pretendido: True
+
+Teste 2 - TAI objecto - Passou!
+Teste 3 - TAI objecto - Passou!
+Teste 4 - TAI objecto - Passou!
+Teste 5 - TAI objecto - Passou!
+Teste 6 - TAI objecto - Passou!
+
+Teste 7 - TAI direccao - Passou!
+Teste 8 - TAI direccao - Passou!
+Teste 9 - TAI direccao - Passou!
+Teste 10 - TAI direccao - Passou!
+Teste 11 - TAI direccao - Passou!
+Teste 12 - TAI direccao - Passou!
+
+Teste 13 - TAI posicao - Passou!
+Teste 14 - TAI posicao - Passou!
+Teste 15 - TAI posicao - Passou!
+Teste 16 - TAI posicao - Passou!
+Teste 17 - TAI posicao - Passou!
+Teste 18 - TAI posicao - Passou!
+Teste 19 - TAI posicao - Passou!
+
+Teste 20 - TAI mapa - Passou!
+Teste 21 - TAI mapa - Passou!
+Teste 22 - TAI mapa - Passou!
+Teste 23 - TAI mapa - Passou!
+Teste 24 - TAI mapa - Passou!
+
+Teste 25 - TAI caminho - Passou!
+Teste 26 - TAI caminho - Passou!
+Teste 27 - TAI caminho - Passou!
+Teste 28 - TAI caminho - Passou!
+Teste 29 - TAI caminho - Passou!
+Teste 30 - TAI caminho - Passou!
+Teste 31 - TAI caminho - Passou!
+Teste 32 - TAI caminho - Passou!
+Teste 33 - TAI caminho - Passou!
+Teste 34 - TAI caminho - Passou!
+Teste 35 - TAI caminho - Passou!
+
+Teste 36 - TAI estado - Passou!
+Teste 37 - TAI estado - Passou!
+Teste 38 - TAI estado - Passou!
+Teste 39 - TAI estado - Passou!
+Teste 40 - TAI estado - Passou!
+Teste 41 - TAI estado - Passou!
+Teste 42 - TAI estado - Passou!
+
+Passou 41 dos 42 testes realizados.
+
+Como se pode ver no exemplo acima, caso um teste
+falhe, a funcao indica o que aconteceu de errado. 
+No exemplo acima, o resultado esperado da invocacao
+espaco_p(espaco) era True. Como a funcao retornou
+False, o teste falhou.
